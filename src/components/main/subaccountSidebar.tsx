@@ -180,7 +180,7 @@ export default function SubaccountSidebarPage() {
         </DropdownMenuContent>
         </DropdownMenu>
 
-          <Link href={`/agency/${agencyId}/dashboard`}>
+          <Link href={`/subaccount/${subaccountId}/dashboard`}>
           <Button
             variant="link"
             className={`w-full text-left font-semibold -ml-16 ${

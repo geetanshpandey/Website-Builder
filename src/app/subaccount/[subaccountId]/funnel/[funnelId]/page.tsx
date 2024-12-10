@@ -122,22 +122,26 @@ export default function MediaPage() {
             <div className="flex min-h-screen items-center bg-gray-100 p-8 pt-1">
             {/* Left Section */}
             <div className="flex-1 justify-center text-center min-h-screen pl-8 pr-8 bg-white rounded-lg shadow-lg h-[3.5x]">
-                <h2 className="flex sm:text-5xl text-3xl font-bold text-gray-800 mb-6 sm:ml-36 mt-20 ml-8"><span className={`${caveat.className}`}>Steps</span></h2>
-                <span className='text-2xl sm:ml-4'><span className={`${caveat.className}`}>Want to create more steps</span></span>
+                <h2 className="flex sm:text-5xl text-3xl font-bold text-gray-800 mb-6 justify-center text-center mt-20 "><span className={`${caveat.className}`}>Steps</span></h2>
+                <span className='text-2xl sm:ml-4 justify-center text-center ' ><span className={`${caveat.className}`}>Want to create more steps</span></span>
+                <div className='flex justify-center text-center'>
                 <Button
-                className="flex bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all sm:ml-32 mb-4 mt-4"
+                className="flex justify-center items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all mb-4 mt-4"
                 onClick={() => setIsStepDialogOpen(true)}
                 >
                 Create Step
                 </Button>
-                <span className='text-2xl sm:ml-4'><span className={`${caveat.className}`}>Want to open editor</span></span>
+                </div>
+                <span className='text-2xl flex justify-center text-center'><span className={`${caveat.className}`}>Want to open editor</span></span>
+                <div className='flex justify-center text-center'>
                 <Link href={`/subaccount/${subaccountId}/funnel/${funnelId}/editor/${editorId}/`}>
                 <Button
-                className="flex bg-neutral-800 text-white px-6 py-3 rounded-lg hover:bg-neutral-900 transition-all sm:ml-32 mt-4"
+                className="flex bg-neutral-800 text-white px-6 py-3 rounded-lg hover:bg-neutral-900 transition-all mt-4"
                 >
                 Open Editor
                 </Button>
                 </Link>
+                </div>
             </div>
 
             {/* Right Section */}
